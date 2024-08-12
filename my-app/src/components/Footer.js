@@ -28,8 +28,8 @@ return (
             </ul>
         </div>
         <div>
-            <h3>Contace</h3>
-            <li>Adress: <br /> 6160 EW, NL</li>
+            <h3>Contact</h3>
+            <li>Adress: <br /> 6112 Chicago</li>
             <li>Phone: <br /> 123456677</li>
             <li>Email: <br /> contact@littlelemon.com</li>
         </div>
