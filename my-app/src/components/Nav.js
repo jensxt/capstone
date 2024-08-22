@@ -24,16 +24,13 @@ export default function Nav (){
                     <a href='/'>Home</a>
                 </li>
                 <li>
-                    <a href='/'>About</a>
+                    <a href='/about'>About</a>
                 </li>
                 <li>
-                    <a href='/'>Services</a>
+                    <a href='/menu'>Menu</a>
                 </li>
                 <li>
-                    <a href='/'>Menu</a>
-                </li>
-                <li>
-                    <a href='/'>Reservation</a>
+                    <a href='/booking'>Reservation</a>
                 </li>
             </ul>
         </nav>

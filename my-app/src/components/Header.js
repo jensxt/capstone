@@ -1,5 +1,6 @@
 import React from "react"
 import bannerPic from "../images/Mario and Adrian A.jpg"
+import { Link } from 'react-router-dom';
 
 export default function Header (){
     return (
@@ -10,7 +11,7 @@ export default function Header (){
                     <h3>Chicago</h3>
                     <p>We are a family owned Mediteraneran restaurant, 
                         focused on traditionel recipes, served with a modern twist</p>
-                    <button>Reserve a table</button>
+                    <Link to="/booking"><button aria-label="On Click">Reserve a table</button></Link>
                 </div>
                 <div className="banner-img">
                     <img src={bannerPic}/>

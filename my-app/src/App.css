@@ -146,8 +146,6 @@ nav ul li a:hover{
 .banner button {
     margin-bottom: 10px;
 }
-
-
 footer {
   padding: 10px 10%;
   display: flex;
@@ -171,9 +169,11 @@ footer p{
   width: 320px;
 }
 
-
-
-
+.booking-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
 
 @media screen and (max-width: 768px){
   .menu-icon {
