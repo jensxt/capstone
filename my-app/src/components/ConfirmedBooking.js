@@ -1,6 +1,6 @@
 import React from "react";
 
-const ConfirmedBooking () => {
+const ConfirmedBooking = () => {
     return (
         <div className="confirm">
             <div>
@@ -9,3 +9,5 @@ const ConfirmedBooking () => {
         </div>
     )
 }
+
+export default ConfirmedBooking;

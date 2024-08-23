@@ -27,7 +27,7 @@ export default function Nav (){
                     <a href='/about'>About</a>
                 </li>
                 <li>
-                    <a href='/menu'>Menu</a>
+                    <a href='/confirmed'>Menu</a>
                 </li>
                 <li>
                     <a href='/booking'>Reservation</a>

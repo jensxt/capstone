@@ -8,12 +8,13 @@ function BookingForm(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', { date, time, guests, occasion });
+    console.log('Form submitted:', { date, time, guests, occasion })
+    props.submitForm(e);
   };
 
   const handleChange = (e) => {
     setDate(e);
-    props.dispatch(e);
+    props.dispatch({ type: 'UPDATE_TIMES', payload: e});
   }
 
   return (

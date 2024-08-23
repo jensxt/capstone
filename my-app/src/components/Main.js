@@ -1,5 +1,6 @@
-import React, { useState, useReducer, useEffect} from 'react';
+import React, { useState, useReducer, useE} from 'react';
 import BookingForm from './BookingForm';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function Main() {
     const seededRandom = function (seed) {
@@ -29,15 +30,22 @@ function Main() {
         return true;
     };
 
-
+const navigate = useNavigate();
+const submitForm = (formData) => {
+    if (submitAPI(formData)){
+        navigate("/confirmed");
+    }
+}
         const initializeTimes = () => {
-        return ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
+            const today = new Date();
+            return fetchAPI(today);
         };
       
       const updateTimes = (state, action) => {
         switch (action.type) {
           case 'UPDATE_TIMES':
-            return initializeTimes();
+            const selectedDate = new Date(action.payload);
+        return fetchAPI(selectedDate);
           default:
             return state;
         }
@@ -45,7 +53,7 @@ function Main() {
       const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
 
   return (
-    <BookingForm availableTimes={availableTimes} dispatch={dispatch}/>
+    <BookingForm availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm}/>
   );
 }
 
