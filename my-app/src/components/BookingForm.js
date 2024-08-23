@@ -18,6 +18,7 @@ function BookingForm(props) {
   }
 
   return (
+    <div className='booking-form-component'>
     <form onSubmit={handleSubmit} style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
       <label htmlFor="res-date">Choose date</label>
       <input 
@@ -26,7 +27,6 @@ function BookingForm(props) {
         value={date} 
         onChange={(e) => handleChange(e.target.value)} 
       />
-      
       <label htmlFor="res-time">Choose time</label>
       <select 
         id="res-time" 
@@ -62,6 +62,7 @@ function BookingForm(props) {
       
       <input type="submit" value="Make Your reservation" />
     </form>
+    </div>
   );
 }
 

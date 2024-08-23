@@ -53,7 +53,9 @@ const submitForm = (formData) => {
       const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
 
   return (
+    <div className='booking-form'>
     <BookingForm availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm}/>
+    </div>
   );
 }
 

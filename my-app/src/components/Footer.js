@@ -14,16 +14,7 @@ return (
                     <a href='/'>Home</a>
                 </li>
                 <li>
-                    <a href='/'>About</a>
-                </li>
-                <li>
-                    <a href='/'>Services</a>
-                </li>
-                <li>
-                    <a href='/'>Menu</a>
-                </li>
-                <li>
-                    <a href='/'>Reservation</a>
+                    <a href='/booking'>Reservation</a>
                 </li>
             </ul>
         </div>
